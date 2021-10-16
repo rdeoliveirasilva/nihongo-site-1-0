@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Bunpoo Koozoo :: Hotmart Japanese Classes</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Colocar o favicon.ico no diretório raíz -->
+
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- PAGE CONTAINER -->
+    <div class="container">
+        <!-- A GRID -->
+        <main>
+            <div id="content" name="content" class="right-content" style="width: auto"> </div>
+            <!-- FIM DO CONTEÚDO LADO DIREITO -->
+        </main>
+        <!-- FIM DA GRID -->
+    </div>
+    <!-- FIM DO PAGE CONTAINER -->
+</body>
+
+<script>
+    fetch("/src/js/intro/intro.json").then(response => response.json()).then(data => {
+        data.content.map((elem, index) => {
+            var title = document.createElement("h2")
+            var hiragana = document.createElement("h2")
+            var subtitle = document.createElement("h2")
+            var card = document.createElement("div")
+            var hr = document.createElement("hr")
+            var img = document.createElement("img")
+            
+            img.src = elem.imgPath.toString()
+            card.classList.add("content", "card-right", "margin-bottom")
+            card.appendChild(img)
+            card.appendChild(audio)
+            
+            title.appendChild(
+                document.createTextNode(elem.title)
+            )
+            hiragana.appendChild(
+                document.createTextNode(elem.hiragana)
+            )
+            subtitle.appendChild(
+                document.createTextNode(elem.subtitle)
+            )
+
+            card.appendChild(title)
+            card.appendChild(hiragana)
+            card.appendChild(subtitle)
+            card.appendChild(hr)
+
+            elem.definitions.map(elem => {
+                var defText = document.createElement("p")
+                defText.appendChild(
+                    document.createTextNode(elem.text)
+                )
+
+                card.appendChild(defText)
+            })
+
+            elem.subjects.map(item => {
+                var subject = document.createElement("h4")
+                subject.classList.add("mt-2")
+
+                subject.appendChild(
+                    document.createTextNode(item.subject)
+                )
+
+                card.appendChild(subject)
+
+                item.content.map(item => {
+                    var explanation = document.createElement("h4")
+                    var block = document.createElement("p")
+                    var blockElem = document.createElement("span")
+                    var romaji = document.createElement("p")
+                    var translate = document.createElement("p")
+                    var separator = document.createElement("hr")
+
+                    explanation.appendChild(
+                        document.createTextNode(item.explanation)
+                    )
+                    card.appendChild(explanation)
+
+                    item.example.map((elem, index) => {
+                        blockElem = document.createElement("span")
+                        tip = document.createElement("span")
+
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+
+                        tip.appendChild(
+                            document.createTextNode(elem.tip)
+                        )
+
+
+                        blockElem.classList.add("tooltip", elem.bgColor)
+                        tip.classList.add("tooltiptext")
+
+                        blockElem.appendChild(tip)
+
+                        block.appendChild(blockElem)
+                    })
+                    blockElem.append("。")
+
+                    block.appendChild(blockElem)
+                    card.appendChild(block)
+
+                    item.romaji.map((elem, index) => {
+                        blockElem = document.createElement("span")
+                        if (index === 0) {
+                            blockElem.append("➞ ")
+                        }
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+
+                        blockElem.classList.add(elem.bgColor)
+                        romaji.appendChild(blockElem)
+                    })
+                    blockElem.append(".")
+
+                    romaji.appendChild(blockElem)
+                    card.appendChild(romaji)
+
+                    item.translate.map((elem, index) => {
+                        blockElem = document.createElement("span")
+                        if (index === 0) {
+                            blockElem.append("➞ ")
+                        }
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+                        blockElem.classList.add(elem.bgColor)
+                        translate.appendChild(blockElem)
+                    })
+
+                    translate.appendChild(blockElem)
+                    card.appendChild(translate)
+                    translate.classList.add("mb-3")
+
+                    //card.appendChild(separator)
+                })
+
+                item.content2.map(item => {
+                    var explanation = document.createElement("h4")
+                    var block = document.createElement("p")
+                    var blockElem = document.createElement("span")
+                    var tip = document.createElement("span")
+                    var romaji = document.createElement("p")
+                    var translate = document.createElement("p")
+                    var separator = document.createElement("hr")
+
+                    explanation.appendChild(
+                        document.createTextNode(item.explanation)
+                    )
+                    card.appendChild(explanation)
+
+                    item.example.map((elem, index) => {
+                        blockElem = document.createElement("span")
+                        tip = document.createElement("span")
+
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+
+                        tip.appendChild(
+                            document.createTextNode(elem.tip)
+                        )
+
+
+                        blockElem.classList.add("tooltip", elem.bgColor)
+                        tip.classList.add("tooltiptext")
+
+                        blockElem.appendChild(tip)
+
+                        block.appendChild(blockElem)
+                    })
+
+                    blockElem.append("。")
+
+                    block.appendChild(blockElem)
+                    card.appendChild(block)
+
+                    item.romaji.map((elem, index) => {
+                        blockElem = document.createElement("span")
+                        if (index === 0) {
+                            blockElem.append("➞ ")
+                        }
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+
+                        blockElem.classList.add(elem.bgColor)
+                        romaji.appendChild(blockElem)
+                    })
+
+                    blockElem.append(".")
+
+                    romaji.appendChild(blockElem)
+                    card.appendChild(romaji)
+
+                    item.translate.map((elem, index) => {
+                        blockElem = document.createElement("span")
+
+                        if (index === 0) {
+                            blockElem.append("➞ ")
+                        }
+
+                        blockElem.appendChild(
+                            document.createTextNode(elem.block)
+                        )
+
+                        blockElem.classList.add(elem.bgColor)
+                        translate.appendChild(blockElem)
+                    })
+
+                    translate.appendChild(blockElem)
+                    card.appendChild(translate)
+                    translate.classList.add("mb-3")
+
+                    //card.appendChild(separator)
+                })
+            })
+
+            document.getElementById("content").appendChild(card)
+        })
+    })
+</script>
+
+<script src="/src/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="/src/js/plugins.js"></script>
+<script src="/src/js/main.js"></script>
+
+<!-- Google Analytics: alterar UA-XXXXX-Y para a ID do site -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</html>

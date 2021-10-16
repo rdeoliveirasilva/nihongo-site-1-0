@@ -1,0 +1,139 @@
+{
+    "content": [{
+        "title": "日本語会話 ＃１",
+        "hiragana": "Nihongo Kaiwa ＃１",
+        "translation": "Diálogo em Japonês #1",
+        "theme": "せんせい を さがして います。",
+        "themeRoomaji": "Sensei o sagashite imasu",
+        "themeTranslation": "Procurando o professor",
+        "introduction": [{
+            "text": "Hoje, você vai acompanhar o Danilo Silva, um intercambista que faz aulas no Japão. Como na maioria dos casos, ele será acompanhado por um professor, que o orientará tanto nos estudos japoneses, como na vivência no país. Apesar de parecer uma replicação do diálogo da unidade 01, é importante você notar as diferenças presentes aqui.Não há apenas uma simples apresentação, mas uma busca por novas informações.Por isso, pense neste diálogo em contraste com aquele, lembrando-se que neste há também uma procura por informações, algo corriqueiro na vida real, mas que altera as frases utilizadas."
+        }]
+    }],
+    "newContent": [{
+        "title": "日本語会話 ＃１",
+        "hiragana": "Nihongo Kaiwa ＃１",
+        "translation": "Diálogo em Japonês #1",
+        "theme": "せんせい を さがして います。",
+        "themeRoomaji": "Sensei o sagashite imasu",
+        "themeTranslation": "Procurando o professor",
+        "introduction": [{
+            "text": ""
+        }],
+        "subjects": [{
+            "subject": "",
+            "content": [{
+                "explanation": "れい　/　EXEMPLOS:",
+                "example": [{
+                        "block": "僕",
+                        "tip": "ぼく　⇒　Eu (masc.).",
+                        "bgColor": "blue-text-block"
+                    },
+                    {
+                        "block": "は",
+                        "tip": "Partícula que indica o assunto da frase.",
+                        "bgColor": "particles-block"
+                    },
+                    {
+                        "block": "ラファエル",
+                        "tip": "Katakana usado em nome estrangeiro - Rafael.",
+                        "bgColor": "yellow-text-block"
+                    },
+                    {
+                        "block": "です",
+                        "tip": "Complemento formal usado no fim de frase.",
+                        "bgColor": "common-text-block"
+                    }
+                ],
+                "romaji": [{
+                        "block": "Boku ",
+                        "bgColor": "blue-text"
+                    },
+                    {
+                        "block": "wa ",
+                        "bgColor": "particles"
+                    },
+                    {
+                        "block": "Rafaeru ",
+                        "bgColor": "yellow-text"
+                    },
+                    {
+                        "block": "desu",
+                        "bgColor": "common-text"
+                    }
+                ],
+                "translate": [{
+                        "block": "Eu ",
+                        "bgColor": "blue-text"
+                    },
+                    {
+                        "block": "sou ",
+                        "bgColor": "particles"
+                    },
+                    {
+                        "block": "Rafael",
+                        "bgColor": "yellow-text"
+                    },
+                    {
+                        "block": ".",
+                        "bgColor": "common-text"
+                    }
+                ]
+            }],
+            "content2": [{
+                "explanation": "",
+                "example": [{
+                        "block": "僕",
+                        "bgColor": "blue-text-block"
+                    },
+                    {
+                        "block": "は",
+                        "bgColor": "particles-block"
+                    },
+                    {
+                        "block": "ラファエル",
+                        "bgColor": "yellow-text-block"
+                    },
+                    {
+                        "block": "です",
+                        "bgColor": "common-text-block"
+                    }
+                ],
+                "romaji": [{
+                        "block": "Boku ",
+                        "bgColor": "blue-text"
+                    },
+                    {
+                        "block": "wa ",
+                        "bgColor": "particles"
+                    },
+                    {
+                        "block": "Rafaeru ",
+                        "bgColor": "yellow-text"
+                    },
+                    {
+                        "block": "desu",
+                        "bgColor": "common-text"
+                    }
+                ],
+                "translate": [{
+                        "block": "Eu ",
+                        "bgColor": "blue-text"
+                    },
+                    {
+                        "block": "sou ",
+                        "bgColor": "particles"
+                    },
+                    {
+                        "block": "Rafael",
+                        "bgColor": "yellow-text"
+                    },
+                    {
+                        "block": ".",
+                        "bgColor": "common-text"
+                    }
+                ]
+            }]
+        }]
+    }]
+}

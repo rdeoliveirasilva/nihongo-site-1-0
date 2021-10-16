@@ -1,0 +1,270 @@
+{
+    "content": [{
+            "title": "最初の文法構造",
+            "hiragana": "さいしょのぶんぽうこうぞう",
+            "subtitle": "PRIMEIRAS ESTRUTURAS GRAMATICAIS",
+            "imgPath": "/src/img/logo.png",
+            "audioPath": "/src/mp3/_02_Nihongo_Kaiwa_1_-_Audio_1x.mp3",
+            "definitions": [{
+                    "text": "A É B. → A WA B DESU."
+                },
+                {
+                    "text": "れい　›　EU SOU JOÃO. → BOKU WA JOÃO DESU."
+                },
+                {
+                    "text": "れんしゅう　›　MARIA WA GAKUSEE DESU.　｜　BOKUTACHI WA INJINIA DESU."
+                }
+            ],
+            "subjects": [{
+                "subject": "じょし　(PARTÍCULAS)",
+                "content": [{
+                    "explanation": "KA = INDICA 'PERGUNTA':",
+                    "example": [{
+                            "block": "あなた",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "は",
+                            "bgColor": "particles-block"
+                        },
+                        {
+                            "block": "だれ",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "です",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "か",
+                            "bgColor": "interrogation-mark-block"
+                        }
+                    ],
+                    "romaji": [{
+                            "block": "anata ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "wa ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "dare ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "desu ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "ka",
+                            "bgColor": "interrogation-mark"
+                        }
+                    ],
+                    "translate": [{
+                            "block": "Quem ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "é ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "você",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "?",
+                            "bgColor": "interrogation-mark"
+                        }
+                    ]
+                }],
+                "content2": [{
+                    "explanation": "WA = INDICA QUEM É O 'ASSUNTO' DA FRASE:",
+                    "example": [{
+                            "block": "あなた",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "は",
+                            "bgColor": "particles-block"
+                        },
+                        {
+                            "block": "だれ",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "です",
+                            "bgColor": "common-text-block"
+                        },
+                        {
+                            "block": "か",
+                            "bgColor": "interrogation-mark-block"
+                        }
+                    ],
+                    "romaji": [{
+                            "block": "anata ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "wa ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "dare ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "desu ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "ka",
+                            "bgColor": "interrogation-mark"
+                        }
+                    ],
+                    "translate": [{
+                            "block": "Quem ",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "é ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "você",
+                            "bgColor": "common-text"
+                        },
+                        {
+                            "block": "?",
+                            "bgColor": "interrogation-mark"
+                        }
+                    ]
+                }]
+            }]
+        },
+        {
+            "title": "人称代名詞",
+            "hiragana": "にんしょうだいめいし",
+            "subtitle": "PRONOMES PESSOAIS",
+            "imgPath": "",
+            "audioPath": "",
+            "definitions": [],
+            "subjects": [{
+                "subject": "",
+                "content": [{
+                    "explanation": "れい　/　EXEMPLOS:",
+                    "example": [{
+                            "block": "僕",
+                            "tip": "ぼく　⇒　Eu (masc.).",
+                            "bgColor": "blue-text-block"
+                        },
+                        {
+                            "block": "は",
+                            "tip": "Partícula que indica o assunto da frase.",
+                            "bgColor": "particles-block"
+                        },
+                        {
+                            "block": "ラファエル",
+                            "tip": "Katakana usado em nome estrangeiro - Rafael.",
+                            "bgColor": "yellow-text-block"
+                        },
+                        {
+                            "block": "です",
+                            "tip": "Complemento formal usado no fim de frase.",
+                            "bgColor": "common-text-block"
+                        }
+                    ],
+                    "romaji": [{
+                            "block": "Boku ",
+                            "bgColor": "blue-text"
+                        },
+                        {
+                            "block": "wa ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "Rafaeru ",
+                            "bgColor": "yellow-text"
+                        },
+                        {
+                            "block": "desu",
+                            "bgColor": "common-text"
+                        }
+                    ],
+                    "translate": [{
+                            "block": "Eu ",
+                            "bgColor": "blue-text"
+                        },
+                        {
+                            "block": "sou ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "Rafael",
+                            "bgColor": "yellow-text"
+                        },
+                        {
+                            "block": ".",
+                            "bgColor": "common-text"
+                        }
+                    ]
+                }],
+                "content2": [{
+                    "explanation": "",
+                    "example": [{
+                            "block": "僕",
+                            "bgColor": "blue-text-block"
+                        },
+                        {
+                            "block": "は",
+                            "bgColor": "particles-block"
+                        },
+                        {
+                            "block": "ラファエル",
+                            "bgColor": "yellow-text-block"
+                        },
+                        {
+                            "block": "です",
+                            "bgColor": "common-text-block"
+                        }
+                    ],
+                    "romaji": [{
+                            "block": "Boku ",
+                            "bgColor": "blue-text"
+                        },
+                        {
+                            "block": "wa ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "Rafaeru ",
+                            "bgColor": "yellow-text"
+                        },
+                        {
+                            "block": "desu",
+                            "bgColor": "common-text"
+                        }
+                    ],
+                    "translate": [{
+                            "block": "Eu ",
+                            "bgColor": "blue-text"
+                        },
+                        {
+                            "block": "sou ",
+                            "bgColor": "particles"
+                        },
+                        {
+                            "block": "Rafael",
+                            "bgColor": "yellow-text"
+                        },
+                        {
+                            "block": ".",
+                            "bgColor": "common-text"
+                        }
+                    ]
+                }]
+            }]
+        }
+    ]
+}

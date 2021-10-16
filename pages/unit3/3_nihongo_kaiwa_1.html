@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Colocar o favicon.ico no diretório raíz -->
+
+    <meta name="theme-color" content="#fafafa">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CONTEÚDO LADO DIREITO -->
+
+    <div id="content" class="py-0 px-2 float-left">
+
+        <div class="content card-right card-content mb-4 px-8 w-screen">
+
+            <div class="content">
+
+                <h1 class="text-7xl font-bold">日本語会話　１</h1>
+                <h1 class="text-7xl font-bold">Nihongo Kaiwa　１</h1><br><br>
+
+                <h2 class="text-7xl font-bold text-red">せんせい　を　さがして　います。</h2>
+                <h4 class="text-4xl font-bold py-4">Sensei o sagashite imasu</h4>
+                <h4 class="text-4xl font-bold text-dark-grey">Procurando o professor</h4>
+                <hr><br>
+
+                <p class="text-2xl text-justify">Hoje, você vai acompanhar o Danilo Silva, um intercambista que faz
+                    aulas no
+                    Japão. Como na maioria dos casos, ele será acompanhado por um professor, que o
+                    orientará tanto nos estudos japoneses, como na vivência no país. <br>
+                    Apesar de parecer uma replicação do diálogo da unidade 01, é importante você
+                    notar as diferenças presentes aqui. Não há apenas uma simples apresentação, mas
+                    uma busca por novas informações. Por isso, pense neste diálogo em contraste com
+                    aquele, lembrando-se que neste há também uma procura por informações, algo
+                    corriqueiro na vida real, mas que altera as frases utilizadas. </p><br><br>
+
+                <audio id="audio-player" controls preload="auto">
+                    <source src="https://drive.google.com/uc?export=download&id=1fuNnUU753JA4HKsC7GyqeWsp8pJmXR70"
+                        type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div class="content card-right card-content mb-4 px-8 w-screen">
+
+            <div class="content">
+                <ol>
+                    <li>
+                        <!-- EXEMPLO 1 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">こんにちは。
+                            <span class="tooltiptext">こんにちは　(kon'nichi wa) = olá / boa tarde</span>
+                        </span>
+                        <span class="text__block-2 tooltip">すみません　が、
+                            <span class="tooltiptext">すみません　(sumimasen) = com licença <br>
+                                が　(ga) = Partícula usada para indicar que quem está falando irá continuar o raciocínio.
+                            </span>
+                        </span>
+                        <span class="text__block-3 tooltip">やまなか　せんせい　は
+                            <span class="tooltiptext">せんせい　(sensē) = professor <br>
+                                は　(wa) = partícula usada para indicar quem é o assunto da frase.
+                            </span>
+                        </span>
+                        <span class="text__block-4 tooltip">います　か。
+                            <span class="tooltiptext">います　(imasu) = estar (formal) <br>
+                                か　(ka) = Partícula usada para indicar pergunta.
+                            </span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_1"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Konnichi wa.</span>
+                        <span class="text__underlined_block-2">Sumimasen ga,</span>
+                        <span class="text__underlined_block-3">Yamanaka-sensē wa</span>
+                        <span class="text__underlined_block-4">imasu ka.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Boa tarde.</span>
+                        <span class="text__underlined_block-2">Com licença,</span>
+                        <span class="text__underlined_block-3">o professor Yamanaka</span>
+                        <span class="text__underlined_block-4">está?</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 2 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">こんにちは。
+                            <span class="tooltiptext">こんにちは　(kon'nichi wa) = olá / boa tarde</span>
+                        </span>
+                        <span class="text__block-2 tooltip">シルバさん
+                            <span class="tooltiptext">シルバさん　(Shiruba-san) =　senhor Silva</span>
+                        </span>
+                        <span class="text__block-3 tooltip">です
+                            <span class="tooltiptext">です　(desu) = indica que a frase é uma afirmação (formal).</span>
+                        </span>
+                        <span class="text__block-4 tooltip">ね。
+                            <span class="tooltiptext">ね　(ne) = (int.) não é / né?</span>
+                        </span>
+
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_2"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Konnichi wa.</span>
+                        <span class="text__underlined_block-2">Shiruba-san</span>
+                        <span class="text__underlined_block-3">desu</span>
+                        <span class="text__underlined_block-4">ne.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Boa tarde.</span>
+                        <span class="text__underlined_block-0">Você</span>
+                        <span class="text__underlined_block-3">é</span>
+                        <span class="text__underlined_block-2">o senhor Silva,</span>
+                        <span class="text__underlined_block-4">não é?</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 3 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">はい。
+                            <span class="tooltiptext">はい（hai） = 　sim</span>
+                        </span>
+                        <span class="text__block-2 tooltip">そう　です。
+                            <span class="tooltiptext">そうです　(sō　desu) = isso mesmo</span>
+                        </span>
+
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_3"></span></span>
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Hai,</span>
+                        <span class="text__underlined_block-2">sō　desu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Sim,</span>
+                        <span class="text__underlined_block-2">isso mesmo.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 4.1 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">やまなかせんせい　は
+                            <span class="tooltiptext">やまなかせんせい　(Yamanaka-sensē) = professor Yamanaka <br>
+                                は　（wa）= Partícula usada para indicar quem é o assunto da frase.
+                            </span>
+                        </span>
+                        <span class="text__block-2 tooltip">けんきゅうしつ　に
+                            <span class="tooltiptext">けんきゅうしつ　(kenkyuushitsu) = sala (de pesquisa) <br>
+                                に　(ni) = partícula que indica 'lugar'.
+                            </span>
+                        </span>
+                        <span class="text__block-3 tooltip">います。
+                            <span class="tooltiptext">います　(imasu) = estar</span>
+                        </span>
+
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_4"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Yamanaka-sensē wa</span>
+                        <span class="text__underlined_block-2">kenkyuushitsu ni</span>
+                        <span class="text__underlined_block-3">imasu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">O professor Yamanaka</span>
+                        <span class="text__underlined_block-3">está</span>
+                        <span class="text__underlined_block-2">em sua sala (de pesquisa).</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 4.2 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-4 tooltip">みぎがわ　の
+                            <span class="tooltiptext">みぎがわ　(migigawa) = lado direito <br>
+                                の　(no) = Partícula que indica posse.
+                            </span>
+                        </span>
+                        <span class="text__block-5 tooltip">にばんめ　の
+                            <span class="tooltiptext">にばんめ　(nibanme) = Segunda <br>
+                                の　(no) = Partícula usada para conectar duas coisas na frase.
+                            </span>
+                        </span>
+                        <span class="text__block-6 tooltip">ドア
+                            <span class="tooltiptext">ドア　(doa) = porta</span>
+                        </span>
+                        <span class="text__block-7 tooltip">です。
+                            <span class="tooltiptext">です　(desu) = indica uma afirmação (formal).</span>
+                        </span>
+
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_5"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-4">Migigawa no</span>
+                        <span class="text__underlined_block-5">nibanme no</span>
+                        <span class="text__underlined_block-6">doa</span>
+                        <span class="text__underlined_block-7">desu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-5">Segunda</span>
+                        <span class="text__underlined_block-6">porta</span>
+                        <span class="text__underlined_block-4">à direita</span>
+                        <span class="text__underlined_block-7">.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 5 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">ありがとう　ございます。
+                            <span class="tooltiptext">ありがとう　ございます　(arigatō gozaimasu) = muito obrigado (formal)</span>
+                        </span>
+                        <span class="text__block-2 tooltip">では、
+                            <span class="tooltiptext">では　(dewa) = então <br>
+                                が　(ga) = partícula usada para indicar que quem está falando irá continuar o raciocínio.
+                            </span>
+                        </span>
+                        <span class="text__block-3 tooltip">しつれい　します。
+                            <span class="tooltiptext">しつれい　します　(shitsurē shimasu) = com licença</span>
+                        </span>
+
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_6"></span></span>
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Arigatou gozaimasu.</span>
+                        <span class="text__underlined_block-2">Dewa,</span>
+                        <span class="text__underlined_block-3">shitsurē shimasu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Muito obrigado.</span>
+                        <span class="text__underlined_block-2">Então,</span>
+                        <span class="text__underlined_block-3">com licença.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 6 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">はい。
+                            <span class="tooltiptext">はい　(hai) = sim</span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_7"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Hai.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Sim.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 7 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">しつれい　します。
+                            <span class="tooltiptext">しつれい　します　(shitsurē shimasu) = com licença</span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_8"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Shitsurē shimasu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Com licença.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 8 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">はい、どうぞ。
+                            <span class="tooltiptext">はい、どうぞ　(hai, dōzo) = pode entrar.</span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_9"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Hai, dōzo</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Pode entrar.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 9.1 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">こんにちは。
+                            <span class="tooltiptext">こんにちは　(kon'nichi wa) = olá / boa tarde</span>
+                        </span>
+                        <span class="text__block-2 tooltip">やまなかせんせい　を、
+                            <span class="tooltiptext">を　(o) = indica o objeto do verbo. <br>
+                                <em>Quem come, come alguma coisa.</em>
+                            </span>
+                        </span>
+                        <span class="text__block-3 tooltip">さがして　
+                            <span class="tooltiptext">さがして　(sagashite) = procurar</span>
+                        </span>
+                        <span class="text__block-4 tooltip">いる　ん　です
+                            <span class="tooltiptext">いる　ん　です　(iru n desu) = estou</span>
+                        </span>
+                        <span class="text__block-5 tooltip">が、
+                            <span class="tooltiptext">が　(ga) = indica continuação do raciocício.</span>
+                        </span>
+                        <span class="text__underlined_block-0-pd tooltip"><span id="frase_10"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Konnichi wa.</span>
+                        <span class="text__underlined_block-2">Yamanaka-sensē o</span>
+                        <span class="text__underlined_block-3">sagashite</span>
+                        <span class="text__underlined_block-4">iru n desu</span>
+                        <span class="text__underlined_block-5">ga,</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Boa tarde.</span>
+                        <span class="text__underlined_block-0">Eu</span>
+                        <span class="text__underlined_block-4">estou</span>
+                        <span class="text__underlined_block-3">procurando</span>
+                        <span class="text__underlined_block-2">o professor Yamanaka.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 9.2 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-6 tooltip">やまなかせんせい　は
+                            <span class="tooltiptext">は　(wa) = indica o assunto principal da frase.</span>
+                        </span>
+                        <span class="text__block-7 tooltip">どちら
+                            <span class="tooltiptext">どちら　(dochira) = Quem</span>
+                        </span>
+                        <span class="text__block-8 tooltip">です
+                            <span class="tooltiptext">です　(desu) = indica uma afirmação (formal).</span>
+                        </span>
+                        <span class="text__block-9 tooltip">か。
+                            <span class="tooltiptext">が　(ka) = interrogação</span>
+                        </span>
+                        <span class="text__underlined_block-0-pd tooltip"><span id="frase_10"></span></span>
+                        <span class="text__underlined_block-0-pd tooltip"><span id="frase_11"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-6">Yamanaka-sensē wa</span>
+                        <span class="text__underlined_block-7">dochira</span>
+                        <span class="text__underlined_block-8">desu</span>
+                        <span class="text__underlined_block-9">ka.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-7">Quem</span>
+                        <span class="text__underlined_block-6">é o professor Yamanaka</span>
+                        <span class="text__underlined_block-9">?</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 10 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">私　が
+                            <span class="tooltiptext">私　(watashi) = eu (masc. formal) <br>
+                                が　(ga) = Emprega ênfase no assunto da frase.
+                            </span>
+                        </span>
+                        <span class="text__block-2 tooltip">やまなか</span>
+                        <span class="text__block-3 tooltip">です。
+                            <span class="tooltiptext">です　(desu) = indica uma afirmação (formal).</span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_12"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Watashi　ga</span>
+                        <span class="text__underlined_block-2">Yamanaka</span>
+                        <span class="text__underlined_block-3">desu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Eu</span>
+                        <span class="text__underlined_block-3">sou</span>
+                        <span class="text__underlined_block-2">o Yamanaka.</span>
+                    </li>
+
+                    <li>
+                        <!-- EXEMPLO 11 -->
+                        <!-- Blocos em Japonês com Tooltip -->
+                        <span class="text__block-1 tooltip">あっ、
+                            <span class="tooltiptext">あっ　(aa) = ah</span>
+                        </span>
+                        <span class="text__block-2 tooltip">よろしく　おねがい　します。
+                            <span class="tooltiptext">よろしく　おねがい　します　(yoroshiku onegai shimasu) = muito prazer / conto
+                                com você</span>
+                        </span>
+                        <span class="text__block-3 tooltip">シルバ・ダニロ　</span>
+                        <span class="text__block-4 tooltip">です。
+                            <span class="tooltiptext">です　(desu) = indica uma afirmação (formal).</span>
+                        </span>
+                        <span class="text__underlined_block-0 tooltip"><span id="frase_13"></span></span>
+
+                        <br>
+                        <!-- Leitura dos blocos em roomaji com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Aa,</span>
+                        <span class="text__underlined_block-2">yoroshiku onegai shimasu.</span>
+                        <span class="text__underlined_block-3">Shiruba Daniro</span>
+                        <span class="text__underlined_block-4">desu.</span>
+
+                        <br>
+                        <!-- Tradução dos blocos com underline na cor dos blocos -->
+                        <span class="text__underlined_block-1">Ah,</span>
+                        <span class="text__underlined_block-2">muito prazer.</span>
+                        <span class="text__underlined_block-4">Sou o</span>
+                        <span class="text__underlined_block-3">Danilo Silva.</span>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO CONTEÚDO LADO DIREITO -->
+</body>
+<script src="/src/js/unidades/3/nihongo_kaiwa_1_frases.js"></script>
+
+<!-- Google Analytics: alterar UA-XXXXX-Y para a ID do site -->
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<script>
+    const audioData = [{
+            url: 'https://drive.google.com/uc?export=download&id=1JQT0R5p7tzOR_0Kq6Eppmh6QfiH9Z0up',
+            parentId: 'frase_1'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=1wWCs1OcW9022JcWYf-18gXx7lyZ4O2k9',
+            parentId: 'frase_2'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=1hbaplVKKAE5mMmEZPWVrJDuUCzRLlsB3',
+            parentId: 'frase_3'
+        },
+        {
+            url: 'https://drive.google.com/uc?export=download&id=1GU_27gu3p3fGRFjxLMbSugEEu3O3XQys',
+            parentId: 'frase_4'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=1oI34yS8rgx8s2kYbNHD9b49d0LRU0nBJ',
+            parentId: 'frase_5'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=11x_baIfHdjIjoaOcVCOMqVUzWdzPCBR2',
+            parentId: 'frase_6'
+        },
+        {
+            url: 'https://drive.google.com/uc?export=download&id=1n_rTyjWL11pcLMzWgj9gXZSpzCQWF81H',
+            parentId: 'frase_7'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=12IrO3Ci7I-4OBundUTjTIk-3TG8RuHc_',
+            parentId: 'frase_8'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=11_9cEg2gTmTi3NPAOgiRHSiv7-i3zRf9',
+            parentId: 'frase_9'
+        },
+        {
+            url: 'https://drive.google.com/uc?export=download&id=1xSzLxvfe_XyLOtlpSgtpX49ocbvjLFud',
+            parentId: 'frase_10'
+        }, {
+            url: 'https://drive.google.com/uc?export=download&id=1u9pa8r5amXD7oBsczc41IwhFVurfAqBv',
+            parentId: 'frase_11'
+        },
+        {
+            url: 'https://drive.google.com/uc?export=download&id=1RsrGxdnFoys6VdQ5tsKBrEw_bvc6vJDF',
+            parentId: 'frase_12'
+        },
+        {
+            url: 'https://drive.google.com/uc?export=download&id=1gMQweocGjm77deRH9BKYvDDEq1Dll9ri',
+            parentId: 'frase_13'
+        }
+    ];
+
+    audioData.forEach(audio =>createPlayer(audio.url, document.getElementById(audio.parentId)))
+</script>
+
+</html>
